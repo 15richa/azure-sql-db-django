@@ -94,11 +94,11 @@ WSGI_APPLICATION = 'django-sql-project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'mssql',
-        'NAME': os.getenv("DB_NAME"),
-        'HOST': os.getenv("DB_SERVER"),
-        'PORT': '1433',
-        'USER': os.getenv("DB_USER"),
-        'PASSWORD': os.getenv("DB_PASSWORD"),
+        'NAME': 'my-db',
+        'HOST': 'stratacentserver.database.windows.net',
+       # 'PORT': '1433',
+        'USER': 'superuserris',
+        'PASSWORD': 'P@$$w0rd1234',
         'OPTIONS': {
 	            'driver': 'ODBC Driver 17 for SQL Server',
 	        },
